@@ -1,7 +1,7 @@
 # eml-observer
 
-[fakeSMTP](http://nilhcem.com/FakeSMTP/)が出力したemlファイルを参照するためのアプリ  
-※結合試験環境でメール確認することを目的としています。
+[fakeSMTP](http://nilhcem.com/FakeSMTP/)が受信したメールを参照するためのアプリ  
+※結合試験環境などでメール確認することを目的に作成
 
 ## 使い方
 1. fakeSMTPのデータ出力先を{このプロジェクト}/dataに設定
