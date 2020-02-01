@@ -15,12 +15,13 @@ app.get("/api/files", async (req, res) => {
 const getMailInfo = async (file) => {
     const rs = fs.createReadStream(path.resolve(dataDir, file));
     // see https://nodemailer.com/extras/mailparser/
-    const { subject, from, to } = await simpleParser(rs).catch(e => console.error(e))
+    const { subject, from, to, date } = await simpleParser(rs).catch(e => console.error(e))
     return {
         file,
         subject,
         from: from ? from.value : [],
-        to: to ? to.value : []
+        to: to ? to.value : [],
+        date
     }
 }
 
