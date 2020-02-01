@@ -8,4 +8,4 @@
 1. `npm i && npm run start`
 1. fakeSMTP起動
 1. http://localhost:3000/ でfakeSMTPが受信したメールを一覧表示します。
-1. 参照したい行をクリックするとemlファイルをダウンロードします。outlookとかで中身確認できます。
+1. ダウンロードボタンをクリックするとemlファイルをダウンロードします。outlookとかで中身確認できます。
